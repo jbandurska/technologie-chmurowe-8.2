@@ -1,0 +1,19 @@
+GET http://localhost:3000/messages
+
+###
+
+POST http://localhost:3000/messages
+Content-Type: application/json
+
+{
+    "message": "Someone's outside your window."
+}
+
+###
+
+POST http://localhost:3000/messages
+Content-Type: application/json
+
+{
+    "message": "Howdy!"
+}
