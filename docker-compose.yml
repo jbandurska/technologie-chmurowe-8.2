@@ -6,15 +6,5 @@ services:
       - "3000:3000"
     depends_on:
       - redis
-    networks:
-      - my-network
   redis:
     image: redis
-    command: ["redis-server", "--bind", "redis", "--port", "6379"]
-    ports:
-      - "6379:6379"
-    networks:
-      - my-network
-networks:
-  my-network:
-    driver: bridge
